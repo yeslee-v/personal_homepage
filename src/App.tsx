@@ -1,10 +1,18 @@
 import React from "react";
+import styled from "styled-components";
+import { Introduction } from "./main/Introduction";
+
+const Wrapper = styled.section`
+  border: solid;
+  border-width: 5px;
+  background: skyblue;
+`;
 
 export const App: React.FC = () => {
   return (
-    <div className="bg-slate-100 text-3xl font-bold underline">
-      예시니 홈페이지
-    </div>
+    <Wrapper>
+      <Introduction />
+    </Wrapper>
   );
 };
 
