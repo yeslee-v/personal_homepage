@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { Introduction } from "./main/Introduction";
 
 const Wrapper = styled.section`
-  border: solid;
-  border-width: 5px;
+  // border: solid;
+  // border-width: 5px;
   background: skyblue;
 `;
 

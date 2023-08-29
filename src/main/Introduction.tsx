@@ -2,6 +2,8 @@ import React from "react";
 import { styled } from "styled-components";
 
 const Div = styled.div`
+  width: 20%;
+
   border: solid;
   border-color: blue;
 `;
