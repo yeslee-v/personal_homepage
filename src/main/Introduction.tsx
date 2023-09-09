@@ -1,18 +1,16 @@
 import React from "react";
 import { styled } from "styled-components";
 
-const Div = styled.div`
+const Wrapper = styled.div`
   width: 20%;
 
   border: solid;
-  border-color: blue;
 `;
 
-export const Introduction = () => {
+const Introduction = () => {
   return (
-    <Div>
-      <p>Hello yeslee World!</p>
-      <p>안녕하세요. 이예신입니다.</p>
+    <Wrapper>
+      <div>이미지 삽입</div>
       <div>
         <a href="yeslee5004@gmail.com">email: yeslee5004@gmail.com</a>
       </div>
@@ -27,7 +25,7 @@ export const Introduction = () => {
           https://www.linkedin.com/in/yeshinlee/
         </a>
       </div>
-    </Div>
+    </Wrapper>
   );
 };
 
