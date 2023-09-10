@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   flex-direction: row;
 `;
 
-export const App: NextPage = () => {
+const App: NextPage = () => {
   return (
     <Wrapper>
       <Introduction />
