@@ -5,26 +5,57 @@ const Wrapper = styled.div`
   width: 20%;
 
   border: solid;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+`;
+
+const ImgBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 20px;
+`;
+
+const InfoBox = styled.div`
+  width: 50%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+`;
+
+const LogoBox = styled.img`
+  margin-right: 5px;
 `;
 
 const Introduction = () => {
   return (
     <Wrapper>
-      <div>이미지 삽입</div>
-      <div>
-        <a href="yeslee5004@gmail.com">email: yeslee5004@gmail.com</a>
-      </div>
-      <div>
-        <a href="https://github.com/yeslee-v">https://github.com/yeslee-v</a>
-      </div>
-      <div>
-        <a href="https://medium.com/@yeslee-v">https://medium.com/@yeslee-v</a>
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/yeshinlee/">
-          https://www.linkedin.com/in/yeshinlee/
+      <ImgBox>
+        <img src="images/potato.png" alt="profile" width={400} height={400} />
+        Yeshin Lee
+      </ImgBox>
+      <InfoBox>
+        <a href="mailto:yeslee5004@gmail.com">
+          {" "}
+          <LogoBox src="images/email.png" width={30} height={20} />
         </a>
-      </div>
+        <a href="https://github.com/yeslee-v">
+          <LogoBox src="images/github-mark.png" width={30} height={30} />
+        </a>
+        <a href="https://medium.com/@yeslee-v">
+          <LogoBox src="images/medium-mark.png" width={40} height={30} />
+        </a>
+        <a href="https://www.linkedin.com/in/yeshinlee/">
+          <LogoBox src="images/linkedin-mark.png" width={30} height={30} />
+        </a>
+      </InfoBox>
     </Wrapper>
   );
 };
