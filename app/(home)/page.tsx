@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Career from "../../components/career";
 import Projects from "../../components/projects";
+import Contacts from "../../components/contacts";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -13,6 +14,7 @@ const Homepage = () => {
       <h2>Software developer who being positive.</h2>
       <Career />
       <Projects />
+      <Contacts />
     </div>
   );
 };
