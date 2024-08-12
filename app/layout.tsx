@@ -1,6 +1,10 @@
 import "../styles/global.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import { Metadata } from "next";
+import { config } from "@fortawesome/fontawesome-svg-core";
+
+config.autoAddCss = false;
 
 export const metadata: Metadata = {
   title: {
