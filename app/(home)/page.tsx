@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Career from "../../components/career";
+import Careers from "../../components/careers";
 import Projects from "../../components/projects";
 import Contacts from "../../components/contacts";
 
@@ -12,7 +12,7 @@ const Homepage = () => {
     <div>
       <h1>Hello Everyone, I'm yeshin lee!</h1>
       <h2>Software developer who being positive.</h2>
-      <Career />
+      <Careers />
       <Projects />
       <Contacts />
     </div>
