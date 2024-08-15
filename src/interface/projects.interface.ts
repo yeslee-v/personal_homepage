@@ -4,8 +4,10 @@ export interface ProjectProps {
 
 export interface ProjectsDetailProps {
   id: number;
-  name: string;
   title: string;
-  description: string[];
+  description: string;
+  skills: string[];
+  position: string;
+  roles: string[];
   githubUrl: string;
 }
