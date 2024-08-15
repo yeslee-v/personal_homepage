@@ -5,8 +5,8 @@
 .careerInfo {
   background-color: rgb(13, 102, 122);
 
-  margin-bottom: 20px;
-  padding: 5px 20px;
+  margin-bottom: 22px;
+  padding: 0px 0px 10px 20px;
 
   border-radius: 5px;
   box-shadow: 0 10px 20px rgba(246, 243, 243, 0.1);
@@ -16,6 +16,7 @@
 
 .careerTitle {
   display: flex;
+  align-items: center;
 
-  gap: 10px;
+  gap: 7px;
 }

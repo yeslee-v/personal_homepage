@@ -3,5 +3,6 @@ export interface CareersDetailProps {
   name: string;
   role: string;
   period: string;
+  blogPostPath: string;
   description: string[];
 }
