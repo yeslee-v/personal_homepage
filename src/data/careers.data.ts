@@ -4,7 +4,7 @@ export const careersDetail: CareersDetailProps[] = [
   {
     id: 3,
     name: "DOUBLE NC",
-    role: "WEB DEVELOPER ",
+    role: "WEB DEVELOPER",
     period: "2022.12 - 2023.12",
     blogPostPath: "update-문을-96-나-최적화했다고-d4d979e4d362",
     description: [
@@ -18,7 +18,7 @@ export const careersDetail: CareersDetailProps[] = [
   {
     id: 2,
     name: "JINHAK APPLY",
-    role: "DEV INTERNSHIP ",
+    role: "DEV INTERNSHIP",
     period: "2022.05 - 2022.07",
     blogPostPath: "진학-어플라이-개발-인턴십-2기-후기-789ea68eb49",
     description: [
