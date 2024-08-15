@@ -10,18 +10,17 @@ const Careers = () => {
   return (
     <div className={styles.careers}>
       {careersDetail.map((career, index) => (
-        <div key={index} className={styles.careerInfo}>
-          {career.name}
-          <div className={styles.popup}>
-            <h4>{career.period}</h4>
-            <ul>
-              {career.description.map((sentence, index) => (
-                <li key={index}>{sentence}</li>
-              ))}
-            </ul>
-            <p></p>
+        <section key={index} className={styles.careerInfo}>
+          <div className={styles.careerTitle}>
+            <h2>{career.name}</h2>
+            <h5>{career.period}</h5>
           </div>
-        </div>
+          <ul>
+            {career.description.map((sentence, index) => (
+              <li key={index}>{sentence}</li>
+            ))}
+          </ul>
+        </section>
       ))}
     </div>
   );

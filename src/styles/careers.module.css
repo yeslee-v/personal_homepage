@@ -1,43 +1,21 @@
 .careers {
-  display: flex;
-  justify-content: flex-start;
-  gap: 20px;
-  padding-top: 5%;
+  padding-top: 10px;
 }
 
 .careerInfo {
-  background-color: lightblue;
+  background-color: rgb(13, 102, 122);
+
+  margin-bottom: 20px;
+  padding: 5px 20px;
+
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(246, 243, 243, 0.1);
+  line-height: 23px;
+  font-size: 15px;
+}
+
+.careerTitle {
   display: flex;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  white-space: nowrap;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* 애니메이션 효과 추가 */
-  cursor: pointer;
-}
 
-.careerInfo:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  z-index: 100;
-}
-
-.popup {
-  display: none;
-  position: absolute;
-  top: 80%;
-  left: 150%;
-  transform: translateX(-50%);
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  z-index: 200;
-  white-space: normal;
-  width: 30vw;
-}
-
-.careerInfo:hover .popup {
-  display: block;
+  gap: 10px;
 }
