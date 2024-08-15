@@ -13,6 +13,7 @@ const Homepage = () => {
       <h1>Hello Everyone, I'm yeshin lee!</h1>
       <h2>Software developer who being positive.</h2>
       <Careers />
+      <hr />
       <Projects />
       <Contacts />
     </div>

@@ -15,7 +15,7 @@ const ProjectDetail = ({ params: { id } }: ProjectProps) => {
   const selectProject = getProject(Number(id));
 
   return (
-    <div key={id} className={styles.container}>
+    <section key={id} className={styles.container}>
       <h1>{selectProject.title}</h1>
       <h2>{selectProject.description}</h2>
       {selectProject.githubUrl.length > 0 && (
@@ -28,15 +28,17 @@ const ProjectDetail = ({ params: { id } }: ProjectProps) => {
         </a>
       )}
       {selectProject.skills.map((skill) => (
-        <img src={skill} width={30} />
+        <img key={id} src={skill} width={30} />
       ))}
 
-      <ul>
-        {selectProject.roles.map((sentence, index) => (
-          <li key={index}>{sentence}</li>
-        ))}
-      </ul>
-    </div>
+      <div>
+        <ul>
+          {selectProject.roles.map((sentence, index) => (
+            <li key={index}>{sentence}</li>
+          ))}
+        </ul>
+      </div>
+    </section>
   );
 };
 

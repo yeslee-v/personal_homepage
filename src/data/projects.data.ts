@@ -22,7 +22,8 @@ export const projectsDetail: ProjectsDetailProps[] = [
   {
     id: 4,
     title: "yeslee-world",
-    description: "개인 포트폴리오 웹페이지",
+    description: "개인 포트폴리오용 웹 사이트",
+    period: "2024.08",
     skills: [TYPESCRIPT_LOGO_URL, NEXTJS_LOGO_URL, VERCEL_LOGO_URL],
     position: "FULL-STACK",
     roles: ["Next.js을 복습하기 위해 App Router 기반으로 만들게 되었습니다."],
@@ -30,8 +31,9 @@ export const projectsDetail: ProjectsDetailProps[] = [
   },
   {
     id: 3,
-    title: "ft-trancendence",
+    title: "maseraT_pong_game",
     description: "Pong 게임 웹 사이트",
+    period: "2022.06 - 2022.08",
     skills: [
       TYPESCRIPT_LOGO_URL,
       REACT_LOGO_URL,
@@ -53,6 +55,7 @@ export const projectsDetail: ProjectsDetailProps[] = [
     id: 2,
     title: "제철42",
     description: "제철 과채소 기반 온라인 커뮤니티 웹 서비스",
+    period: "2021.08 - 2021.11",
     skills: [
       PYTHON_LOGO_URL,
       DJANGO_LOGO_URL,
@@ -72,6 +75,7 @@ export const projectsDetail: ProjectsDetailProps[] = [
     id: 1,
     title: "LifeOn42",
     description: "42 Seoul 개발자 성향 테스트",
+    period: "2020.11 - 2020.12",
     skills: [HTML5_LOGO_URL, CSS_LOGO_URL, JAVASCRIPT_LOGO_URL],
     position: "FRONTEND DEVELOPMENT",
     roles: [
