@@ -6,7 +6,7 @@ import {
   faMedium,
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
-import { GMAIL, LINKEDIN_URL, MEDIUM_URL, GITHUB_URL } from "../app/constants";
+import { GITHUB_URL, GMAIL, LINKEDIN_URL, MEDIUM_URL } from "../app/constants";
 
 const Contacts = () => {
   return (
