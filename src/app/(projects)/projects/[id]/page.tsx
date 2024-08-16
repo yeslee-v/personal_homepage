@@ -4,11 +4,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { projectsDetail } from "../../../../data/projects.data";
 import { ProjectProps } from "../../../../interface/projects.interface";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Metadata } from "next";
 
 const getProject = (id: number) => {
   return projectsDetail.find((project) => {
     return project.id === id;
   });
+};
+
+export const generateMetadata = async ({
+  params: { id },
+}: ProjectProps): Promise<Metadata> => {
+  const project = await getProject(Number(id));
+
+  return {
+    title: project.title,
+  };
 };
 
 const ProjectDetail = ({ params: { id } }: ProjectProps) => {
