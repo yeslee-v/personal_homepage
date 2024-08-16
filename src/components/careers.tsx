@@ -11,28 +11,31 @@ export const metadata: Metadata = {
 
 const Careers = () => {
   return (
-    <div className={styles.careers}>
-      {careersDetail.map((career, index) => (
-        <section key={index} className={styles.careerInfo}>
-          <div className={styles.careerTitle}>
-            <h2>{career.name}</h2>
-            <a
-              href={`${MEDIUM_URL}${career.blogPostPath}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faLink} />
-            </a>
-            <h5>{career.period}</h5>
-          </div>
-          <ul>
-            {career.description.map((sentence, index) => (
-              <li key={index}>{sentence}</li>
-            ))}
-          </ul>
-        </section>
-      ))}
-    </div>
+    <section className={styles.careers}>
+      <h2>Careers</h2>
+      <div>
+        {careersDetail.map((career, index) => (
+          <section key={index} className={styles.careerBox}>
+            <div className={styles.careerTitle}>
+              <h3>{career.name}</h3>
+              <a
+                href={`${MEDIUM_URL}${career.blogPostPath}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faLink} />
+              </a>
+              <h5>{career.period}</h5>
+            </div>
+            <ul>
+              {career.description.map((sentence, index) => (
+                <li key={index}>{sentence}</li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </section>
   );
 };
 
