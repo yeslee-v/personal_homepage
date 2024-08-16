@@ -10,7 +10,7 @@ import { GITHUB_URL, GMAIL, LINKEDIN_URL, MEDIUM_URL } from "../app/constants";
 
 const Contacts = () => {
   return (
-    <div className={styles.contacts}>
+    <section className={styles.contacts}>
       <a href={`mailto:${GMAIL}`} target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGoogle} size="2x" color="#D14836" />
       </a>
@@ -23,7 +23,7 @@ const Contacts = () => {
       <a href={MEDIUM_URL} target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faMedium} size="2x" />
       </a>
-    </div>
+    </section>
   );
 };
 
