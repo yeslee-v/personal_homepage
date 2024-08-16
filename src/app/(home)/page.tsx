@@ -7,7 +7,7 @@ import Careers from "../../components/careers";
 
 export const metadata: Metadata = {
   title: "Home",
-
+  icons: { icon: "/images/yeslee-world.png" },
 };
 
 const Homepage = () => {
