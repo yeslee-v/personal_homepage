@@ -80,8 +80,10 @@ export const projectsDetail: ProjectsDetailProps[] = [
     position: "FRONTEND DEVELOPMENT",
     roles: [
       "JavaScript 학습을 위해 if(kakao) 2020 행사에서 아이디어를 얻어 시작했습니다.",
-      "페어 프로그래밍으로 진행하면서, 7개의 질문 페이지와 각각의 결과 이미지를 쌓는 기능을 구현했습니다. 해상도에 따라 레이아웃이 깨지는 문제를 겪으면서 레이아웃의 통일성에 대해 고민해볼 수 있었습니다.",
+      "페어 프로그래밍으로 진행하면서, 7개의 질문 페이지와 각각의 결과 이미지를 쌓는 기능을 구현했습니다.",
+      "해상도에 따라 레이아웃이 깨지는 문제를 겪으면서 레이아웃의 통일성에 대해 고민해볼 수 있었습니다.",
     ],
+    deployUrl: "https://seohee-choi.github.io/LifeOn42/",
     githubUrl: "https://github.com/seohee-choi/LifeOn42",
   },
 ];
