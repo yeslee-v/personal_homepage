@@ -5,6 +5,7 @@ import { projectsDetail } from "../../../../data/projects.data";
 import { ProjectProps } from "../../../../interface/projects.interface";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Metadata } from "next";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 const getProject = (id: number) => {
   return projectsDetail.find((project) => {
@@ -28,21 +29,37 @@ const ProjectDetail = ({ params: { id } }: ProjectProps) => {
   return (
     <section key={id} className={styles.container}>
       <h1>{selectProject.title}</h1>
-      <h2>{selectProject.description}</h2>
-      {selectProject.githubUrl.length > 0 && (
-        <a
-          href={selectProject.githubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faGithub} size="2x" />
-        </a>
-      )}
-      {selectProject.skills.map((skill) => (
-        <img key={id} src={skill} width={30} />
-      ))}
+      <div className={styles.projectSubtitle}>
+        <h3>{selectProject.description}</h3>
+        <div className={styles.projectUrl}>
+          {selectProject.deployUrl && (
+            <a
+              href={selectProject.deployUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faLink} size="1x" />
+            </a>
+          )}
 
-      <div>
+          {selectProject.githubUrl.length > 0 && (
+            <a
+              href={selectProject.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} size="1x" />
+            </a>
+          )}
+        </div>
+      </div>
+
+      <div className={styles.projectSkill}>
+        {selectProject.skills.map((skill) => (
+          <img key={`${id}-${skill}`} src={skill} width={30} />
+        ))}
+      </div>
+      <div className={styles.projectRole}>
         <ul>
           {selectProject.roles.map((sentence, index) => (
             <li key={index}>{sentence}</li>

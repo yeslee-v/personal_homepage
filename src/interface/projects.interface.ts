@@ -10,5 +10,6 @@ export interface ProjectsDetailProps {
   skills: string[];
   position: string;
   roles: string[];
+  deployUrl?: string;
   githubUrl: string;
 }

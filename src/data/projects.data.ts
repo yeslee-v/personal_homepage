@@ -24,7 +24,12 @@ export const projectsDetail: ProjectsDetailProps[] = [
     title: "yeslee-world",
     description: "개인 포트폴리오용 웹 사이트",
     period: "2024.08",
-    skills: [TYPESCRIPT_LOGO_URL, NEXTJS_LOGO_URL, VERCEL_LOGO_URL],
+    skills: [
+      TYPESCRIPT_LOGO_URL,
+      REACT_LOGO_URL,
+      NEXTJS_LOGO_URL,
+      VERCEL_LOGO_URL,
+    ],
     position: "FULL-STACK",
     roles: ["Next.js을 복습하기 위해 App Router 기반으로 만들게 되었습니다."],
     githubUrl: "https://github.com/yeslee-v/personal_homepage",
@@ -46,7 +51,8 @@ export const projectsDetail: ProjectsDetailProps[] = [
     position: "BACKEND DEVELOPMENT",
     roles: [
       "pong game과 상대방과의 채팅 기능이 구현된 프로젝트로 프론트엔드 1명, 백엔드 2명이 작업했습니다.",
-      "Build 시간을 줄이기 위해 AWS EC2에 배포하였습니다. 42 API와 JWT를 활용해 로그인과 게임 방에 출입하는 소켓을 구현하였습니다.",
+      "Build 시간을 줄이기 위해 AWS EC2에 배포하였습니다.",
+      "42 API와 JWT를 활용해 로그인과 게임 방에 출입하는 소켓을 구현하였습니다.",
       "JWT 저장 위치에 대해 상의하고, Django와 비교해가면서 NestJS만의 특징에 대해 학습하였습니다.",
     ],
     githubUrl: "https://github.com/Maserati-Quattroporte/maseraT_pong_game",
@@ -80,8 +86,10 @@ export const projectsDetail: ProjectsDetailProps[] = [
     position: "FRONTEND DEVELOPMENT",
     roles: [
       "JavaScript 학습을 위해 if(kakao) 2020 행사에서 아이디어를 얻어 시작했습니다.",
-      "페어 프로그래밍으로 진행하면서, 7개의 질문 페이지와 각각의 결과 이미지를 쌓는 기능을 구현했습니다. 해상도에 따라 레이아웃이 깨지는 문제를 겪으면서 레이아웃의 통일성에 대해 고민해볼 수 있었습니다.",
+      "페어 프로그래밍으로 진행하면서, 7개의 질문 페이지와 각각의 결과 이미지를 쌓는 기능을 구현했습니다.",
+      "해상도에 따라 레이아웃이 깨지는 문제를 겪으면서 레이아웃의 통일성에 대해 고민해볼 수 있었습니다.",
     ],
+    deployUrl: "https://seohee-choi.github.io/LifeOn42/",
     githubUrl: "https://github.com/seohee-choi/LifeOn42",
   },
 ];

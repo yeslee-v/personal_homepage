@@ -15,7 +15,7 @@ const Careers = () => {
       <h2>Careers</h2>
       <div>
         {careersDetail.map((career, index) => (
-          <section key={index} className={styles.careerBox}>
+          <section key={`${index}-${career.name}`} className={styles.careerBox}>
             <div className={styles.careerTitle}>
               <h3>{career.name}</h3>
               <a
