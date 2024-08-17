@@ -1,25 +1,47 @@
 .container {
-  width: 80%;
-  gap: 50px;
-  margin: 0 auto;
-  line-height: 1.3;
+  width: 60%;
+  padding: 10px 40px;
+
+  margin: auto;
+
+  color: rgb(76, 74, 74);
+
+  border-radius: 60px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 11px 11px 22px #9b9b9b, -11px -11px 22px #ffffff;
 }
 
-.poster {
-  border-radius: 20px;
-  max-width: 70%;
-  place-self: center;
+.container h1 {
+  color: black;
+
+  margin-bottom: 0px;
+  font-size: 50px;
 }
 
-.title {
-  color: white;
-  font-size: 36px;
-  font-weight: 600;
-}
-
-.info {
+.projectTitleBox {
   display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  gap: 20px;
+
+  margin: auto;
+
+  color: rgb(31, 31, 31);
+
+  gap: 10px;
+}
+
+.projectUrl {
+  margin-top: 22px;
+}
+
+.projectSkill {
+  margin: auto;
+}
+
+.projectRole {
+  padding: 20px 0px;
+}
+
+.projectRole li {
+  margin: 10px 0px;
+
+  line-height: 23px;
 }
