@@ -13,11 +13,12 @@ const Projects = () => {
       <h2>Projects</h2>
       <div className={styles.project}>
         {projectsDetail.map((project) => (
-          <Link prefetch href={`projects/${project.id}`}>
-            <section
-              key={`${project.id}-${project.title}`}
-              className={styles.projectBox}
-            >
+          <Link
+            key={`${project.id}-${project.title}`}
+            prefetch
+            href={`projects/${project.id}`}
+          >
+            <section className={styles.projectBox}>
               <img
                 alt={project.title}
                 src={`/images/${project.title}.png`}
