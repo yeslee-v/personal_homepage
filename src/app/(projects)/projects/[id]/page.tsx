@@ -29,7 +29,7 @@ const ProjectDetail = ({ params: { id } }: ProjectProps) => {
   return (
     <section key={id} className={styles.container}>
       <h1>{selectProject.title}</h1>
-      <div className={styles.projectTitleBox}>
+      <div className={styles.projectSubtitle}>
         <h3>{selectProject.description}</h3>
         <div className={styles.projectUrl}>
           {selectProject.deployUrl && (
@@ -56,7 +56,7 @@ const ProjectDetail = ({ params: { id } }: ProjectProps) => {
 
       <div className={styles.projectSkill}>
         {selectProject.skills.map((skill) => (
-          <img key={id} src={skill} width={30} />
+          <img key={`${id}-${skill}`} src={skill} width={30} />
         ))}
       </div>
       <div className={styles.projectRole}>
