@@ -1,6 +1,6 @@
-import { CareersDetailProps } from "../interface/careers.interface";
+import { ExperienceDetailProps } from "../interface/experience.interface";
 
-export const careersDetail: CareersDetailProps[] = [
+export const experienceDetail: ExperienceDetailProps[] = [
   {
     id: 2,
     name: "DOUBLE NC",
