@@ -1,16 +1,10 @@
-.container h1 {
-  font-size: 70px;
-  margin-bottom: 0px;
+.home {
+  margin-left: 15px;
 }
 
-.container h2 {
-  font-size: 35px;
-}
+.description {
+  margin-left: 0px;
+  line-height: 25px;
 
-.container h3 {
-  font-size: 25px;
-}
-
-.container p {
-  font-size: 30px;
+  margin-bottom: 30px;
 }

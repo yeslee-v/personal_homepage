@@ -2,9 +2,9 @@ import { Metadata } from "next";
 
 import Projects from "../../components/projects";
 import Contacts from "../../components/contacts";
-import styles from "../../styles/home.module.css";
 import Careers from "../../components/careers";
 import Education from "../../components/education";
+import Home from "../../components/home";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -13,11 +13,8 @@ export const metadata: Metadata = {
 
 const Homepage = () => {
   return (
-    <section className={styles.container}>
-      <div>
-        <h1>YESHIN LEE</h1>
-        <p>Software developer who being positive</p>
-      </div>
+    <section>
+      <Home />
       <Contacts />
       <hr />
       <Careers />
