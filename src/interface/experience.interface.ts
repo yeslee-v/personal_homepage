@@ -1,4 +1,4 @@
-export interface CareersDetailProps {
+export interface ExperienceDetailProps {
   id: number;
   name: string;
   role: string;
