@@ -8,6 +8,8 @@
 
   line-height: 23px;
   font-size: 15px;
+  border: 1px solid beige;
+  border-radius: 5px;
 }
 
 .experienceTitle {
