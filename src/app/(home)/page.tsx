@@ -5,6 +5,7 @@ import Contacts from "../../components/contacts";
 import Careers from "../../components/careers";
 import Education from "../../components/education";
 import Home from "../../components/home";
+import Skills from "../../components/skills";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -22,6 +23,8 @@ const Homepage = () => {
       <Projects />
       <hr />
       <Education />
+      <hr />
+      <Skills />
     </section>
   );
 };
