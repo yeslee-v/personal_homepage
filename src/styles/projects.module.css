@@ -3,6 +3,7 @@
   justify-content: flex-start;
   gap: 20px;
   padding-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .projectBox {
@@ -19,6 +20,7 @@
   align-items: center;
   text-align: center;
 
+  word-break: break-all;
   flex-direction: column;
 
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
@@ -33,6 +35,20 @@
   cursor: pointer;
 
   opacity: 0.8;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+@media (max-width: 1024px) {
+  .projectBox h6 {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .projectBox h4 {
+    display: none;
+  }
 }
 
 .projectBox:hover {
