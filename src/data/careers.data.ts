@@ -2,7 +2,7 @@ import { CareersDetailProps } from "../interface/careers.interface";
 
 export const careersDetail: CareersDetailProps[] = [
   {
-    id: 3,
+    id: 2,
     name: "DOUBLE NC",
     role: "WEB DEVELOPER",
     period: "2022.12 - 2023.12",
@@ -16,7 +16,7 @@ export const careersDetail: CareersDetailProps[] = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     name: "JINHAK APPLY",
     role: "DEV INTERNSHIP",
     period: "2022.05 - 2022.07",
@@ -24,17 +24,6 @@ export const careersDetail: CareersDetailProps[] = [
     description: [
       "동료들과 JavaScript 스터디를 진행하고, 업무 자동화를 위해 대학 정보 관리 서비스(NestJS, TypeORM)를 만들었습니다.",
       "인턴십 종료 후, 테스트 코드의 필요성을 느껴 따로 학습하였습니다.",
-    ],
-  },
-  {
-    id: 1,
-    name: "42 SEOUL",
-    role: "Member",
-    period: "2020.05 - Present",
-    blogPostPath: "2년간의-42서울-여행기-2145fc821d0e",
-    description: [
-      "교수, 교재, 학비 없이 자기 주도 및 동료학습으로 총 23개의 UNIX 기반 프로젝트를 수행(PBL: Project Based Learning)했습니다.",
-      "C, C++를 활용하여 CS 개념을 직접 구현하면서, 이론을 빠르게 체득할 수 있었습니다.",
     ],
   },
 ];

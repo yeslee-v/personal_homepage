@@ -1,0 +1,14 @@
+.educationBox {
+  margin-bottom: 22px;
+  padding: 0px 0px 10px 20px;
+
+  line-height: 23px;
+  font-size: 15px;
+}
+
+.educationTitle {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+}
