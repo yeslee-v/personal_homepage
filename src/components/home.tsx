@@ -3,8 +3,11 @@ import styles from "../styles/home.module.css";
 const Home = () => {
   return (
     <section className={styles.home}>
-      <h1>YESHIN LEE</h1>
-      <p>Software developer who being positive</p>
+      <h1>Lorem Ipsum</h1>
+      <p>
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+        consectetur, adipisci velit...
+      </p>
       <div className={styles.description}>
         <span>
           Contrary to popular belief, Lorem Ipsum is not simply random text.
